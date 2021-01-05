@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/neelxie/nodeapp/issues"
   },
-  "homepage": "https://github.com/neelxie/nodeapp#readme"
+  "homepage": "https://github.com/neelxie/nodeapp#readme",
+  "dependencies": {
+    "express": "^4.3.1"
+  }
 }
