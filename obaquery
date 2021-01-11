@@ -1,0 +1,15 @@
+db.posts.update(
+    {
+        title: 'Post Two'
+        
+    },
+    {
+        
+        $set: {
+            body: 'Nkoye nze',
+            category: 'Uganda',
+        }
+        
+    }
+    
+)
