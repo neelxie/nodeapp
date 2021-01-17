@@ -10,9 +10,8 @@ const app = express();
 //   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 // });
 
-app.get('api/members', (req, res) => {
-    res.json(members);
-});
+app.get('/api/members', (req, res) => 
+    res.json(members));
 
 app.use(express.static(path.join(__dirname, 'public')));
 

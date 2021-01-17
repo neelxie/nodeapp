@@ -22,7 +22,7 @@ const members = [
         name: 'Jane Doe',
         email: 'janedoe@cia.gov',
         status: 'active'
-    },
+    }
 ];
 
-modeule.exports = members;
+module.exports = members;
