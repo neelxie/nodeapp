@@ -13,3 +13,7 @@ app.listen(port, function() {
 
 // npm i -D nodemon
 // dev env to prevent reloaading our server
+// create a script
+// in package.json
+// scripts --"start": ""node index",
+//              "dev": "nodemon index" 
