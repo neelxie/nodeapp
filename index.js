@@ -4,7 +4,12 @@ const members = require('./Members');
 
 const app = express();
 
+const logger = (req, res, next) => {
+    console.log("Did it!");
+    next();
+};
 
+app.use(logger);
 
 // app.get('/', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'public', 'index.html'));
