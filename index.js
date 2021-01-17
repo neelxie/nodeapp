@@ -1,8 +1,10 @@
 var express = require("express");
+const path = require('path');
+
 var app = express();
 
 app.get('/', (req, res) => {
-  res.send('Greatest!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 var port = Number(process.env.PORT || 5000);
