@@ -1,11 +1,13 @@
 var express = require("express");
 const path = require('path');
 
-var app = express();
+const app = express();
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 var port = process.env.PORT || 5000;
 
@@ -19,5 +21,4 @@ app.listen(port, function() {
 // in package.json
 // scripts --"start": ""node index",
 //              "dev": "nodemon index" 
-
 //npm run dev
