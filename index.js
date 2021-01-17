@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-var port = Number(process.env.PORT || 5000);
+var port = process.env.PORT || 5000;
 
 app.listen(port, function() {
   console.log("Listening on " + port);
