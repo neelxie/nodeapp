@@ -17,3 +17,5 @@ app.listen(port, function() {
 // in package.json
 // scripts --"start": ""node index",
 //              "dev": "nodemon index" 
+
+//npm run dev
